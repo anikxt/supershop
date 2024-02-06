@@ -1,0 +1,143 @@
+1. Creating frontend first
+cmd -> npm create vite@latest
+
+2. Extra packages - react-hot-toast react-icons sass firebase react-router-dom react-table
+cmd -> npm i react-hot-toast react-icons sass firebase react-router-dom react-table
+
+3. Installing dev dependencies -> @types/react-table
+cmd -> npm i --save-dev @types/react-table
+
+4. Clean up -> delete all css file(App.css, index.css), clear App.tsx and 'rafce'
+
+5. Create new folder 'styles' in ./src and create new file 'app.scss' and import in main.tsx
+
+6. Importing react-router-dom
+import statement -> import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+-A. Importing from 'react-router-dom':
+---React Router is a powerful library for handling navigation and routing in React applications.
+---'react-router-dom' is a specific package within React Router that provides components for routing in web-based environments.
+
+-B. Imported Components:
+--BrowserRouter as Router:
+----This component is responsible for setting up routing context for a web application.
+----It syncs the URL in the browser address bar with the rendered components.
+----It utilizes the browser's history API for navigation.
+----It's typically used near the root of your application to encapsulate all routes.
+--Routes:
+----This component serves as a container for multiple individual routes.
+----It allows you to define multiple Route components within it, each representing a different path in your application.
+--Route:
+----This component defines a specific path and the component to render when that path is matched in the URL.
+----It takes a path prop (a string representing the URL path) and an element prop (the component to render when the path matches).
+
+Code Example:
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
+}
+
+7. Importing 'lazy' and 'Suspense'
+import statement -> import { lazy, Suspense } from 'react';
+--lazy function: 
+----This function is used to create a component that will be loaded dynamically (or "lazily") when it's needed, 
+rather than loading it upfront along with the rest of your application's code. 
+----This technique is called code-splitting and can help improve performance, especially for large applications.
+--Suspense component: 
+----This component is used to manage the loading state of lazy components. 
+----It allows you to specify a fallback UI (like a loading spinner) to display while the lazy component is being fetched.
+
+8. Create 'mixin' function in Sass
+
+9. Remove everything that you don't need in react command shortcut
+cmd -> alt + shift + o
+
+10. Adding admin dashboard
+
+11. Creating Header UI component
+
+12. Creating Home UI and Product Card
+
+13. Creating Cart UI
+
+14. Creating Login UI
+
+15. Creating Search UI
+
+16. Creating Orders Page UI
+
+// Backend Setup
+
+17. Instslling typescript globally
+cmd -> npm i -g typescript
+
+18. Configuring 'tsconfig.json' file and package.json
+
+19. Installing package (express, dotenv, mongoose)
+cmd -> npm i express dotenv mongoose
+
+20. Installing dev dependencies(@types/express, @types/node, typescript, nodemon)
+cmd -> npm i --save-dev @types/express @types/node typescript nodemon
+
+21. Backend basic folder structure(routes, controllers, middlewares, models, types, utils)
+
+22. Installing validator
+cmd -> npm i validator
+
+23. Installing dev dependencies(@types/validator)
+cmd -> npm i @types/validator
+
+24. Creating first API
+
+25. Custom Error Handler (utilility class for status code and message, wrapper function for trycatch)
+
+26. Creating Users API
+
+27. Creating Admin and Multer middlewares
+
+28. Installing multer
+cmd -> npm i multer
+
+29. Installing dev dependencies(@types/multer)
+cmd -> npm i --save-dev @types/multer
+
+30. Creating Product APIs
+
+31. Installing dev dependencies(faker-js/faker)
+cmd -> npm i faker-js/faker
+
+32. Installing uuid
+cmd -> npm i uuid
+
+33. Caching the Data
+cmd -> npm i node-cache
+
+34. env and morgan Setup
+cmd -> npm i morgan
+
+35. Installing dev dependencies(@types/morgan)
+cmd -> npm i @types/morgan
+
+36. Order Schema and API
+
+37. Coupon Schema and API
+
+38. Dashboard Statistics API
+
+39. Stripe API Integration
+cmd -> npm i stripe
+
+// Working with frontend
+
+40. Firebase and Google Login
+cmd -> npm install @reduxjs/toolkit react-redux axios
+
+41. RTK Query Setup
