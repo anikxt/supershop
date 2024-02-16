@@ -105,12 +105,9 @@ To get started with the SuperShop e-commerce application, follow these steps:
    npm start
    ```
 
-<br/><br/>
 Now, both the frontend and backend servers should be up and running, allowing you to explore and interact with the SuperShop e-commerce application.
 
-```
 Ensure that you have MongoDB installed and running on your local machine. The `.env` file in the backend directory should contain the MongoDB connection URI (`MONGODB_URI`) pointing to your local MongoDB database.
-```
 
 ## Contributing
 
